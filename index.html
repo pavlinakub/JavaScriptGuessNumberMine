@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      body {
+        background-color: black;
+        color: green;
+        font-size: 1.5rem;
+        padding-right: 150px;
+        padding-left: 150px;
+      }
+      .again {
+        float: left;
+
+        background-color: green;
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+      h1 {
+        text-align: center;
+        font-weight: bold;
+        font-size: 4rem;
+      }
+      .between > p {
+        font-weight: bold;
+        text-align: right;
+      }
+      .check {
+        background-color: green;
+        font-size: 1.5rem;
+        font-weight: bold;
+        width: 250px;
+      }
+      label {
+        font-weight: bold;
+      }
+      .scoreLabel {
+        text-align: left;
+      }
+      .highScoreLabel {
+        text-align: left;
+      }
+      .writeNumber {
+        background-color: green;
+        font-weight: bold;
+        font-size: 1.5rem;
+      }
+      .guessingNumber {
+        margin-left: 45%;
+        text-align: center;
+        padding-top: 30px;
+        max-width: 150px;
+        height: 125px;
+        color: black;
+        background-color: green;
+        font-size: 4.5rem;
+      }
+      .message {
+        text-align: right;
+        padding-right: 120px;
+        font-weight: bold;
+      }
+      .score .highScore {
+        padding-right: 150px;
+      }
+      .labels {
+        padding-left: 75%;
+      }
+    </style>
+  </head>
+  <body class="body" background="" color="">
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <button class="again">Again!</button>
+          </div>
+          <div class="col-6 between">
+            <p>Between 1 and 2O</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1>Guess My Number!</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="guessingNumber">?</div>
+          </div>
+        </div>
+        <br />
+        <br />
+        <div class="row">
+          <div class="col-6">
+            <input
+              type="number"
+              name="writeNumber"
+              value=""
+              min=""
+              max=""
+              class="writeNumber"
+            />
+          </div>
+          <div class="col-6">
+            <div class="message"></div>
+            <br />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <button class="check">Check!</button>
+          </div>
+          <div class="col-4 labels">
+            <div class="scoreLabel">
+              Score:
+              <div class="score"></div>
+            </div>
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-6 labels">
+            <div class="highScoreLabel">
+              Highscore:
+              <div class="highscore"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
